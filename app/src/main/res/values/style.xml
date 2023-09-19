@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AddDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#E8DC6F</item>
+        <item name="android:colorPrimary">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:colorAccent">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+    <style name="EditDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#E8DC6F</item>
+        <item name="android:colorPrimary">#000000</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:colorAccent">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@android:color/black</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="CustomAppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize the background color of the app's title -->
+
+        <!-- Customize the text color of the app's title -->
+        <item name="android:textColor">@color/titleText</item>
+    </style>
+</resources>

@@ -1,0 +1,37 @@
+/*
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+ */
+rootProject.name = "Expense Tracking"
+include ':app'
+include ':pdfcreator'
+
+// Optionally, you can specify the path to the folders if they are not in the root directory.
+// include 'path/to/folder1'
+// include 'path/to/folder2'
+
+// Specify the Java version
+def javaVersion = '1.8'
+
+//allprojects {
+    // Set the Java version for all projects
+//    tasks.withType(JavaCompile) {
+//        sourceCompatibility = javaVersion
+//        targetCompatibility = javaVersion
+//    }
+//}

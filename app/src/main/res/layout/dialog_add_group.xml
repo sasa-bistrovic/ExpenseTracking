@@ -1,0 +1,212 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Spinner
+        android:id="@+id/groupSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account Email"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/passwordTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account Password"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/verificationcodeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Account Verification Code"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/groupEmailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Group Email"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/aliasTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alias"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/taskTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/measuringUnitTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Measuring Unit"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/limitTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Limit"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancelGroupButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Cancel"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/deleteGroupButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Delete"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/addGroupButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Add"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/resendverificationcodeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Resend Code"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/changePasswordButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Change Password"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/deleteAccountButton"
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Delete Account"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="SignOut"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="SignIn"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/createaccountButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Create Account"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

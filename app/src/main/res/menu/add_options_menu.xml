@@ -1,0 +1,18 @@
+<!-- add_options_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/optionCreateGroup"
+        android:title="ADD/CREATE GROUP" />
+    <item
+        android:id="@+id/option4"
+        android:title="CREATE PDF" />
+    <item
+        android:id="@+id/option1"
+        android:title="ADD BY ENTERING VALUE" />
+    <item
+        android:id="@+id/option2"
+        android:title="ADD BY SPEECH RECOGNITION" />
+    <item
+        android:id="@+id/option3"
+        android:title="ADD BY TEXT RECOGNITION" />
+</menu>
