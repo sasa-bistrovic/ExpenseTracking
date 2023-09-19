@@ -2562,14 +2562,16 @@ public class MainActivity extends AppCompatActivity {
                     public void onClick(View view2) {
                         String groupEmailStr = groupEmail.getText().toString();
                         String nameStr = name.getText().toString();
+                        String emailStr = email.getText().toString();
 
                         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
                         FirebaseUser usera = firebaseAuth.getCurrentUser();
 
                         if (usera != null) {
-                            if (!TextUtils.isEmpty(groupEmailStr) && !TextUtils.isEmpty(nameStr)) {
-                                //if (groupEmailStr.equals(usera.getEmail())) {
+                            if (!TextUtils.isEmpty(groupEmailStr) && !TextUtils.isEmpty(nameStr) && !TextUtils.isEmpty(emailStr)) {
+                                if (groupEmailStr.equals(collectiongroupEmail) && nameStr.equals(collectionGroup) && emailStr.equals(collectionaccountEmail)) {
+                                    //if (groupEmailStr.equals(usera.getEmail())) {
                                     deleteGroupRow(groupEmailStr, nameStr);
                                     collectionEmail = "empty";
                                     collectionaccountEmail = "empty";
@@ -2577,7 +2579,7 @@ public class MainActivity extends AppCompatActivity {
                                     collectionGroup = "empty";
                                     collectionAlias = "empty";
                                     collectiongroupEmail = "empty";
-                                    collectionaccountMeasuringUnit="empty";
+                                    collectionaccountMeasuringUnit = "empty";
                                     firestore = FirebaseFirestore.getInstance();
                                     collectionReference = firestore.collection(collectionEmail);
 
@@ -2597,18 +2599,21 @@ public class MainActivity extends AppCompatActivity {
                                     recyclerView.setAdapter(adapter);
                                     //alterdialog.dismiss();
                                     //setSpinnerValue(view);
-                                //}
-                                Timer timer = new Timer();
+                                    //}
+                                    Timer timer = new Timer();
 
-                                TimerTask task = new TimerTask() {
-                                    @Override
-                                    public void run() {
-                                        setSpinnerValue(view);
-                                    }
-                                };
+                                    TimerTask task = new TimerTask() {
+                                        @Override
+                                        public void run() {
+                                            setSpinnerValue(view);
+                                        }
+                                    };
 
-                                // Schedule the task to run after a delay of 5 seconds
-                                timer.schedule(task, 2000);
+                                    // Schedule the task to run after a delay of 5 seconds
+                                    timer.schedule(task, 2000);
+                                } else {
+                                    Toast.makeText(MainActivity.this, "Please ADD Group first.", Toast.LENGTH_SHORT).show();
+                                }
                             }
                         }
                     }
