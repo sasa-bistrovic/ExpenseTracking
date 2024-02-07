@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".TextRecognitionResultActivity">
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/minusTextRecognitionResult"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#254302"
+        android:text="Convert To MInus/Plus Value"
+        android:textColor="#FFFFFF" />
+
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Scan"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/enteramount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Enter Amount"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/cancelamount"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#254302"
+            android:text="Cancel"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/field1TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/item_row_top_line"
+        android:textSize="3sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/field1TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/field2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/field3TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/field4TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/actionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#254302"
+        android:text="Choose action"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/field1TextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_row_bottom_line"
+        android:textSize="3sp" />
+
+</LinearLayout>
